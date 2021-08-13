@@ -42,7 +42,7 @@ struct SuffixArray {//O(NlogN)
   }
 };
 
-struct LCPArray{//O(N)
+struct LCPArray{//O(N) indexが通常に戻っている点に注意
     vector<int> LA;
     const string s;
     LCPArray(const SuffixArray &sa) : s(sa.s){
